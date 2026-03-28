@@ -5,6 +5,15 @@
 }
 body{
     font-family: 'Poppins', sans-serif;
+    background: linear-gradient(
+        135deg,
+        #cde7f0 0%,   /* soft sky blue */
+        #a8d8ea 35%,  /* light ocean */
+        #89c9d6 60%,  /* muted blue */
+        #f5e6ca 85%,  /* soft sand */
+        #ecd5a3 100%  /* warm sand */
+    );
+    min-height: 100vh;
 }
 
 html{
@@ -12,7 +21,7 @@ html{
 }
 
 p{
-    color: rgb(85, 85, 85);
+    color: #2b2b2b;
 }
 /* transition */
 a .btn{
@@ -122,7 +131,7 @@ a:hover{
 }
 /* sections */
 section{
-    padding: 4vh;
+    padding: 6vh 10rem;
     /* height: 96vh; */
     margin: 0 10rem;
     box-sizing: border-box;
@@ -137,7 +146,7 @@ section{
     display: flex;
     justify-content: center;
     gap: 5rem;
-    height: 80vh;
+    min-height: 80vh;
 }
 .section__pic-container{
     display: flex;
@@ -268,19 +277,14 @@ section{
 }
 
 .details-container {
-    padding: 1.5rem;
-    background: white;
-    border-radius: 2rem;
-    border: rgb(163,163,163) 0.1rem solid;
-    text-align: center;
-}
-
-/* Experience Section */
-.details-container {
     padding: 2rem;
+    background: rgba(255, 255, 255, 0.6); /* glass effect */
+    backdrop-filter: blur(8px);
     border-radius: 2rem;
-    border: 1px solid #ccc;
+    border: 1px solid rgba(255,255,255,0.2);
+    text-align: center;
     width: 400px;
+    color: #222;
 }
 
 #experience {
