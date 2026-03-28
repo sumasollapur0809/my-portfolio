@@ -7,11 +7,9 @@ body{
     font-family: 'Poppins', sans-serif;
     background: linear-gradient(
         135deg,
-        #cde7f0 0%,   /* soft sky blue */
-        #a8d8ea 35%,  /* light ocean */
-        #89c9d6 60%,  /* muted blue */
-        #f5e6ca 85%,  /* soft sand */
-        #ecd5a3 100%  /* warm sand */
+        #dff3f7 0%,
+        #bfe6ee 40%,
+        #f5e6ca 100%
     );
     min-height: 100vh;
 }
@@ -449,4 +447,41 @@ footer{
 }
 footer p{
     text-align: center;
+}
+
+.wave-container {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    height: 120px;
+    overflow: hidden;
+    z-index: 0;
+}
+
+.wave {
+    position: absolute;
+    width: 200%;
+    height: 100px;
+    bottom: 0;
+    background: linear-gradient(
+        to top,
+        rgba(137, 201, 214, 0.6),
+        rgba(137, 201, 214, 0.2)
+    );
+    border-radius: 50%;
+}
+
+.wave1 {
+    animation: waveMove 10s linear infinite;
+}
+
+.wave2 {
+    bottom: 15px;
+    opacity: 0.5;
+    animation: waveMove 16s linear infinite reverse;
+}
+
+@keyframes waveMove {
+    from { transform: translateX(0); }
+    to { transform: translateX(-50%); }
 }
