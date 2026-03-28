@@ -18,7 +18,7 @@ html{
     scroll-behavior: smooth;
 }
 
-p{
+body:not(.dark-mode) p {
     color: #2b2b2b;
 }
 /* transition */
@@ -484,4 +484,56 @@ footer p{
 @keyframes waveMove {
     from { transform: translateX(0); }
     to { transform: translateX(-50%); }
+}
+
+#theme-toggle {
+    margin-left: 5rem;
+}
+
+
+body.dark-mode {
+    background: linear-gradient(
+        135deg,
+        #0d1e26,
+        #203a43,
+        #2c5364
+    );
+    color: #f1f1f1;
+}
+
+/* TEXT FIX */
+body.dark-mode p,
+body.dark-mode h1,
+body.dark-mode h2,
+body.dark-mode h3,
+body.dark-mode a {
+    color: #f1f1f1;
+}
+
+/* PROJECT & ABOUT CARDS */
+body.dark-mode .details-container {
+    background: rgba(0, 0, 0, 0.6); 
+    color: #fff;
+    border: 1px solid rgba(255,255,255,0.1);
+}
+
+/* EXPERIENCE TEXT */
+body.dark-mode .experience-sub-title {
+    color: #ddd;
+}
+
+/* BUTTONS */
+body.dark-mode .btn-color-2 {
+    border: 1px solid #fff;
+    color: #fff;
+}
+
+/* FIX LINKS HOVER */
+body.dark-mode a:hover {
+    color: #00c3ff;
+}
+
+/* REMOVE WEIRD WHITE BOX EFFECT */
+body.dark-mode .contact-info-upper-container {
+    background: rgba(0,0,0,0.5);
 }
