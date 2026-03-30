@@ -51,7 +51,7 @@
 
     /* FIX WIDTH */
     section {
-        margin: 0 5%;
+        margin: 0 1rem;
         height: auto;
     }
 
@@ -89,6 +89,10 @@
         gap: 1.5rem;
     }
 
+    #projects .about-containers{
+        width: 100%;
+    }
+
     section {
         margin: 0 1rem;
         padding: 2rem 0;
@@ -96,8 +100,10 @@
 
 
     .details-container {
+        padding: 0 1rem;
         width: 100%;
-        max-width: 320px;
+        max-width: 90%;
+        margin: auto;
     }
 
 
@@ -108,7 +114,10 @@
     }
 
     .project-img {
-        height: 180px;
+        width: 100%;
+        height: auto;
+        max-height: 200px;
+        object-fit: cover;
     }
 
 
