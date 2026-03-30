@@ -1,7 +1,12 @@
 /* general styling */
-*{
+* {
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    overflow-x: hidden;
 }
 body{
     font-family: 'Poppins', sans-serif;
@@ -129,9 +134,8 @@ a:hover{
 }
 /* sections */
 section{
-    padding: 6vh 10rem;
-    /* height: 96vh; */
-    margin: 0 10rem;
+    padding: 6vh 5rem;
+    margin: 0 5rem;
     box-sizing: border-box;
     min-height: fit-content;
 }
