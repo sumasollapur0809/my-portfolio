@@ -157,4 +157,11 @@
     footer {
         height: auto;
     }
+    .wave-container {
+        height: 50px;
+    }
+    .wave{
+        height: 50px;
+        opacity: 0.5;
+    }
 }

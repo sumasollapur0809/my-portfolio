@@ -381,6 +381,7 @@ article .icon {
     justify-content: center;
     flex-direction: column;
     height: 70vh;
+    padding-bottom: 4rem;
 }
 /* PROJECT SECTION FIX */
 #projects {
@@ -458,22 +459,40 @@ footer p{
     position: fixed;
     bottom: 0;
     width: 100%;
-    height: 120px;
+    height: 80px;
     overflow: hidden;
     z-index: 0;
+    pointer-events: none;
 }
 
 .wave {
     position: absolute;
     width: 200%;
-    height: 100px;
+    height: 80px;
     bottom: 0;
-    background: linear-gradient(
-        to top,
-        rgba(137, 201, 214, 0.6),
-        rgba(137, 201, 214, 0.2)
+    background: radial-gradient(
+        ellipse at center,
+        rgba(137, 201, 214, 0.5) 20%,
+        transparent 70%
     );
     border-radius: 50%;
+    opacity: 0.6;
+}
+
+/* smoother animation */
+.wave1 {
+    animation: waveMove 12s linear infinite;
+}
+
+.wave2 {
+    bottom: 10px;
+    opacity: 0.4;
+    animation: waveMove 18s linear infinite reverse;
+}
+
+@keyframes waveMove {
+    from { transform: translateX(0); }
+    to { transform: translateX(-50%); }
 }
 
 .wave1 {
