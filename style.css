@@ -108,6 +108,7 @@ a:hover{
     font-size: 1.5rem;
     text-decoration: none;
     transition: all 0.3s ease-in-out;
+    color: black;
 }
 .menu-links li{
     list-style: none;
@@ -514,6 +515,10 @@ body.dark-mode a {
     color: #f1f1f1;
 }
 
+body.dark-mode .menu-links{
+    background-color: #333;
+}
+
 /* PROJECT & ABOUT CARDS */
 body.dark-mode .details-container {
     background: rgba(0, 0, 0, 0.6); 
@@ -540,4 +545,12 @@ body.dark-mode a:hover {
 /* REMOVE WEIRD WHITE BOX EFFECT */
 body.dark-mode .contact-info-upper-container {
     background: rgba(0,0,0,0.5);
+}
+
+#theme-toggle {
+    /* margin-left: 5rem; */
+    position: fixed;
+    top: 1rem;
+    right: 1rem;
+    z-index: 999;
 }
